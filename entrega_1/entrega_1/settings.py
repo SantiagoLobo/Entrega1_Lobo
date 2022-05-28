@@ -55,7 +55,7 @@ ROOT_URLCONF = 'entrega_1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Usuario/Desktop/entrega final/Entrega1_Lobo/entrega_1/App_Azeroth_Broker/template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
