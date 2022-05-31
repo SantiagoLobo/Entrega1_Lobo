@@ -10,12 +10,8 @@ class Usuario(models.Model):
 
 class Vendedor(models.Model):
     nombre = models.CharField(max_length=30)
-    apellido = models.CharField(max_length=30)
-    email = models.EmailField()
-    Server = models.CharField(max_length=30)
-    stock = models.IntegerField()
-    precio = models.FloatField()
-    
+    juego = models.CharField(max_length=30)
+    discord = models.CharField(max_length=30)
 
 class Moderador(models.Model):
     nombre = models.CharField(max_length=30)

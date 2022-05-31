@@ -7,3 +7,9 @@ from . import template
 
 def inicio(request):
     return render(request,"inicio.html")
+
+def vendedor(request):
+    return render(request,"vendedores.html") 
+
+def contacto(request):
+    return render(request,"contacto.html")
