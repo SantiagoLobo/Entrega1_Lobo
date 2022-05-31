@@ -13,3 +13,6 @@ def vendedor(request):
 
 def contacto(request):
     return render(request,"contacto.html")
+
+def juegos(request):
+    return render(request,"juegos.html")
