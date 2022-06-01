@@ -18,4 +18,6 @@ class Moderador(models.Model):
     apellidos = models.CharField(max_length=30)
     email = models.EmailField()
 
-
+class juego(models.Model):
+    nombre = models.CharField(max_length=30)
+    
