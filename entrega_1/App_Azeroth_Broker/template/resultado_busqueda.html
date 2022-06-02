@@ -1,0 +1,17 @@
+{%extends "inicio.html"%}
+{% load static %}
+
+{% block content %}
+    {% if vendedor %}
+    <ul>
+    {% for n in vendedor %}
+        <li>{{n.nombre}}, {{n.juego}}, {{n.discord}}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No se encontraron vendedores</p>
+    {% endif %}
+
+
+
+{% endblock %}

@@ -30,24 +30,21 @@ def alta_vendedor(request):
             return render(request,"vendedores.html")
     return render(request,"form_Vendedor.html")
 
-def buscar_V(request):
+def buscar_v(request):
     return render(request,"buscar_vendedor.html")
+
+
 def buscar(request):
-    """
     if request.GET["nombre"]:
         nombre=request.GET["nombre"]
-        vendedor = Vendedor.objects.filter(nombre__icontins = nombre)
-        return HttpResponse(vendedor)
+        vendedor = Vendedor.objects.filter(nombre__icontains = nombre)
+        return render(request,"resultado_busqueda.html",{"vendedor": vendedor})
     else:
         return HttpResponse("Campo Vacio")
-    """
-    return HttpResponse(f"we are looking for the seller {request.GET['nombre']}")
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    #return HttpResponse(f"we are looking for the seller {request.GET['nombre']}")
+    
 

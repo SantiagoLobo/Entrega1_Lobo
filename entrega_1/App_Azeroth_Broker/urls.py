@@ -6,6 +6,6 @@ urlpatterns = [
     path("vendedores/", views.vendedor, name="vendedores"),
     path("juegos/", views.juegos, name="juegos"),
     path("alta", views.alta_vendedor, name="alta_vendedor"),
-    path("vendedor_search/",views.buscar_V,name="buscar_v"),
-    path("buscar/",views.buscar)
+    path("buscar_v",views.buscar_v, name="buscar_v"),
+    path("buscar",views.buscar, name="buscar")
 ]
